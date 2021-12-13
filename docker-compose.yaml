@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  telegram-bot:
+    container_name: telegram-bot
+    build: .
+    environment:
+      API_URL: https://api.telegram.org/bot
+      API_TOKEN: 5007026803:AAGk8OaREVwIqlQN7dMqMT1E4jWrVAjRuXI
+    command: python3 telebot/main.py
